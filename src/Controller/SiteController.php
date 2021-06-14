@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Feedback;
 use App\Form\FeedbackFormType;
 use App\Repository\FeedbackRepository;
+use App\Repository\ServicesRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -30,10 +31,10 @@ class SiteController extends AbstractController
     }
 
     #[Route('/services', name: 'services')]
-    public function services(): Response
+    public function services(ServicesRepository $servicesRepository): Response
     {
         return $this->render('site/services.html.twig', [
-            'controller_name' => 'SiteController',
+            'services' => $servicesRepository->findAll(),
         ]);
     }
 

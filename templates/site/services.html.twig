@@ -253,45 +253,21 @@
         <h2 class ="service_text">А ЕЩЁ МЫ ДЕЛАЕМ ФОТОСУВЕНИРЫ</h2>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 service__items">
-            <div class="col">
-                <div class="card souvenirs_item h-100">
-                    <a href="#">
-                        <img src="images/s-9271.jpg" class="card-img-top" alt=""></a>
-                    <div class="card-body p-0">
-                        <h2 class="souvenirs_title">Объемные буквы</h2>
-                        <p class="souvenirs_text">Оперативная печать светостойких фотомагнитов самых разнообразных видов и форм в Новосибирске. </p>
-                    </div>
-                    <div class="card-footer p-0">
-                        <a href="#" class="souvenirs_about">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card souvenirs_item h-100">
-                    <a href="#">
-                        <img src="images/s-9271.jpg" class="card-img-top" alt=""></a>
-                    <div class="card-body p-0">
-                        <h2 class="souvenirs_title">Печати на кружках</h2>
-                        <p class="souvenirs_text">Самая качественная печать на кружках в Новосибирске. Напечатаем на кружках фото, картинки, надписи, логотипы.</p>
-                    </div>
-                    <div class="card-footer p-0">
-                        <a href="#" class="souvenirs_about">Подробнее</a>
+            {% for service in services %}
+                <div class="col">
+                    <div class="card souvenirs_item h-100">
+                        <a href="#">
+                            <img src="/uploads/{{ service.photo }}" class="card-img-top" alt=""></a>
+                        <div class="card-body p-0">
+                            <h2 class="souvenirs_title">{{ service.title }}</h2>
+                            <p class="souvenirs_text">{{ service.text }}</p>
+                        </div>
+{#                        <div class="card-footer p-0">#}
+{#                            <a href="#" class="souvenirs_about">Подробнее</a>#}
+{#                        </div>#}
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card souvenirs_item h-100">
-                    <a href="#">
-                        <img src="images/s-9271.jpg" class="card-img-top" alt=""></a>
-                    <div class="card-body p-0">
-                        <h2 class="souvenirs_title">Коврики для мышки</h2>
-                        <p class="souvenirs_text">Качественная печать Ваших фотографий картинок, текста, логотипов  на ковриках для компьютерной мыши.</p>
-                    </div>
-                    <div class="card-footer p-0">
-                        <a href="#" class="souvenirs_about">Подробнее</a>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </section>
 </main>
