@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %} </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link href="css/fonts/Neo/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+          integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+<header class="header">
+
+    <div class="header_up  d-lg-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3" >
+                    <div class="header_photo"></div>
+                    <a href="{{ path('site') }}">
+                        <img class ="img-fluid" src="images/s-9207.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-lg-3 d-flex">
+                    <div class="header_info  ">
+                        <img class ="icon" src="images/выа.png">
+                        <p class ="header_text">г. Новосибирск, Красный проспект 66</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 d-flex justify-content-center">
+                    <div class="header_info ">
+                        <img class ="icon" src="images/322-3229884_png-file-telephone-icon-clipart.png">
+                        <p class ="header_text">8 (383) 212-47-99</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="header_info_second ">
+                        <img class ="icon_email" src="images/а.png">
+                        <p class ="header_text_second">print@m-foto54.ru</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-1  ">
+                    <div class ="header_social">
+                        <a href="#" class="network"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="network"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg   ">
+        <div class="container">
+            <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon  "></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+
+                <ul class="navbar-nav justify-content-between w-100">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="{{ path('services') }}">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('souvenirs') }}">Фотосувениры</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('about') }}">О нас</a>
+                    </li>
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" href="#">Новости</a>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" href="">Контакты</a>#}
+{#                    </li>#}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('feedback') }}">Отзывы</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </nav>
+</header>
+    {% block body %} {% endblock %}
+<footer class ="footer">
+    <div class ="container footer_content">
+        <div class ="row">
+            <div class ="col-md-4 col-sm-4 col-xs-6">
+                <h4 class = "footer_tittle">Услуги</h4>
+                <ul class = "footer_list">
+                    <li>
+                        <a href ="#">Фото на документы</a>
+                    </li>
+                    <li>
+                        <a href ="#">Печать фото</a>
+                    </li>
+                    <li>
+                        <a href ="#">Ксерокопии</a>
+                    </li>
+                    <li>
+                        <a href ="#">Печать документов</a>
+                    </li>
+                    <li>
+                        <a href ="#">Сканирование</a>
+                    </li>
+                    <li>
+                        <a href ="#">Ретушь фото</a>
+                    </li>
+                    <li>
+                        <a href ="#">Фото на памятник</a>
+                    </li>
+                    <li>
+                        <a href ="#">Наклейки на авто</a>
+                    </li>
+                    <li>
+                        <a href ="#">Изготовление визиток</a>
+                    </li>
+                    <li>
+                        <a href ="#">Сканирование плёнки</a>
+                    </li>
+                </ul>
+            </div>
+            <div class ="col-md-4 col-sm-4 col-xs-6">
+                <h4 class = "footer_tittle">Фотосувениры</h4>
+                <ul class = "footer_list">
+                    <li>
+                        <a href ="#">Фотомагниты</a>
+                    </li>
+                    <li>
+                        <a href ="#">Печать на кружках</a>
+                    </li>
+                    <li>
+                        <a href ="#">Коврики для мыши</a>
+                    </li>
+                    <li>
+                        <a href ="#">Фотокамни</a>
+                    </li>
+                    <li>
+                        <a href ="#">Водные сувениры</a>
+                    </li>
+                    <li>
+                        <a href ="#">Брелки</a>
+                    </li>
+                </ul>
+            </div>
+            <div class ="col-md-4 col-sm-4 col-xs-6">
+                <h4 class = "footer_tittle_second">Контакты</h4>
+                <div class="footer_info ">
+                    <img class ="icon" src="images/выа.png">
+                    <p class ="footer_text">г. Новосибирск, Красный проспект 66</p>
+                </div>
+                <div class="footer_info_second ">
+                    <img class ="icon_email" src="images/а.png">
+                    <p class ="footer_text_second">print@m-foto54.ru</p>
+                </div>
+                <div class="footer_info ">
+                    <img class ="icon" src="images/322-3229884_png-file-telephone-icon-clipart.png">
+                    <p class ="footer_text">8 (383) 212-47-99</p>
+                </div>
+                <h4 class = "footer_tittle_second">Способы оплаты</h4>
+                <div class ="footer_payment">
+                    <img src="images/allIcons4.png" class ="pay">
+                </div>
+            </div>
+        </div>
+        <a href ="https://www.google.ru/maps/place/Красный+пр-т.,+66,+Новосибирск,+Новосибирская+обл.,+630091/@55.040452,82.9160503,17z/data=!3m1!4b1!4m5!3m4!1s0x42dfe5c84433813b:0x1ebaf0c3afec4602!8m2!3d55.040452!4d82.918239" class ="d-flex justify-content-center" >
+            <img src ="images/69-693648_map-marker-free-download-png-orange-map-marker-png.png" class="map_marker" title="Перейти в полноэкранный режим">
+        </a>
+    </div>
+    <div id="map"> </div>
+
+</footer>
+    <script>
+        function initMap(){
+            var pos ={lat: 55.0405011611467, lng:82.9183677443913};
+            var opt = {
+                center: pos,
+                zoom: 15,
+                styles:[
+                    {
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#212121"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#757575"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "color": "#212121"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#757575"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.country",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#9e9e9e"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.land_parcel",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.locality",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#bdbdbd"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#757575"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#181818"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#616161"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "color": "#1b1b1b"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#2c2c2c"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#8a8a8a"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#373737"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#3c3c3c"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway.controlled_access",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#4e4e4e"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#616161"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#757575"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#3d3d3d"
+                            }
+                        ]
+                    }
+                ]
+            };
+            var map = new google.maps.Map(document.getElementById("map"), opt);
+
+
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC421lNO0gEURFpG39u4O8PArBw8rkPdss&callback=initMap&libraries=places&channel=GMPSB_locatorplus_v2_c" async defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+            integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"></script>
+
+    {% block javascripts %}
+        {#{{ encore_entry_script_tags('app') }}#}
+    {% endblock %}
+    </body>
+</html>
+

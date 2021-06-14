@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Отзывы{% endblock %}
+
+{% block body %}
+
+    <main>
+        <section class ="container-fluid price">
+            <div class ="container ">
+                {% if app.flashes('success_submit') %}
+                    <div class="flash-notice">
+                        Благодарим за отправку отзыва
+                    </div>
+                {% else %}
+                    <div class ="container ">
+                        {% for feedback in feedbacks %}
+                            <div class="mt-2 mb-2 border-bottom">
+                                <h4>{{ feedback.name }}</h4>
+                                <p>{{ feedback.text }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="container">
+                        <div class ="price_line"></div>
+                    </div>
+
+                    {{ form(form) }}
+                {% endif %}
+            </div>
+        </section>
+    </main>
+{% endblock %}

@@ -1,0 +1,753 @@
+@font-face {
+    font-family: Montseratt;
+    src: url(fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+body {
+    background: #232323;
+    font-family: Montseratt;
+    font-size: 18px;
+    line-height: normal;
+    color: #fff;
+}
+.container {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    }
+    .header{
+        height: 130px;
+        background-color: #131313;
+        filter: drop-shadow(0px 4px 4px #000000);
+        z-index: 100;
+    }
+    .header_photo{
+     height:45px;
+     width: 200px;
+    }
+    .header_info{
+        padding-top: 23px;
+       
+    }
+   
+    .icon{
+        height: 19px;
+        width: 19px;
+    }
+    .header_text{
+        font-size: 13px;
+        padding-left: 35px;
+        margin-top: -17px;
+        cursor: pointer;
+        font-family: Verdana;
+    }
+    .header_text:hover{
+        color: #FF800B
+        
+    }
+    .icon_email{
+        height: 33px;
+        width: 31px;
+    }
+    .header_info_second{
+        padding-top: 20px;
+    }
+    .header_text_second{
+        font-size: 13px;
+        padding-left: 41px;
+        margin-top: -27px;
+        cursor: pointer;
+    }
+    .header_text_second:hover{
+        color: #FF800B
+        
+    }
+    .header_social{
+        margin-top: 20px;
+    }
+    .navbar-nav{
+        padding-left: 325px;
+        padding-right:180px;
+        margin-top: -30px;
+    }
+   
+    .nav-link{
+        color: #fff;
+    }
+    .nav-link:hover{
+        color:#FF800B;
+    }
+    
+    .network {
+        margin:10px;
+        display: inline-flex;
+        min-width: 25px;
+        height: 25px;
+        background-color: #EAEAEA;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        
+    }
+    
+
+    .network i {
+        font-size: 20px;
+        color: #232323;
+    }
+  
+    .carousel-caption{
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    
+        padding-left: 300px;
+    }
+    
+    .carousel_block{
+        margin-bottom: 50px;
+    }
+    .carousel-opacity{
+        opacity: 50%;
+    }
+    
+    .carousel_text_block{
+        padding-bottom: 40px;
+
+    }
+    
+    .carousel-heading{
+        
+        font-size: 48px;
+        line-height: 50px;
+        font-weight: bold;
+        color:#FF800B;
+        
+        
+    }
+    
+    .carousel-text{
+        font-size: 22px;
+        line-height: 25px;
+    
+        padding-top: 10px;
+    }
+    
+    .btn_carousel{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: -50px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    @media screen and (max-width: 991px) {
+    
+        .carousel-heading{
+            font-size: 24px;
+            line-height: 29px;
+        }
+        
+        .carousel_text{
+            font-size: 14px;
+            line-height: 20px;
+        }
+    
+        .carousel_text_block{
+            padding-bottom: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 767px) {
+        .carousel_block{
+            max-width: 170px;
+        }
+    
+        .carousel-heading{
+            font-size: 14px;
+            line-height: 17px;
+        }
+        
+        .carousel_text{
+            font-size: 10px;
+            line-height: 12px;
+        }
+    
+        .btn_carousel{
+            padding-right: 27px;
+            padding-left: 27px;
+        }
+    
+    }
+    
+    .btn_orange{
+        background: #FF800B;
+        color: white;
+    }
+    
+    .btn_orange:hover{
+        color: white;
+    }
+    
+    
+    .carousel-btn{
+        margin-top: 50px;
+    }
+    
+    .carousel-indicators{
+        bottom: -50px;
+    }
+    
+    .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+      }
+   .slider{
+       margin-top: 90px;
+   }
+   .service{
+       margin-top: 150px;
+   }
+   .service_text{
+       font-weight: bold;
+       padding-bottom: 50px;
+   }
+   .service-card{
+       background-image: url("../images/1.jpg");
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+       margin-top: 30px;
+      height: 350px;}
+      .service__title{
+        font-size: 48px;
+        
+      }
+      .service_hover{
+        text-decoration: none;
+        color: #fff;
+      }
+      .service_hover:hover{
+        color: #fff;
+      }
+      
+  
+   
+   .service_undertittle{
+       padding-top: 60px;
+       padding-bottom: 27px;
+       font-size: 24px;
+   }
+   .service_undertittle2{
+    padding-top: 60px;
+    padding-bottom: 55px;
+    font-size: 24px;
+}
+    .service_back{
+        background-color: rgba(0,0,0,0);
+        border-top: 0px;
+}
+   .about{
+       font-size: 18px;
+       color: #FF800B;
+       text-decoration: none;
+       font-weight: bold;
+      
+   }
+   .about:hover{
+    color: #FF800B;
+    font-size: 20px;
+    
+   }
+   .service-card2{
+       background-image: url(../images/2.jpg);
+   }
+   .service-card3{
+    background-image: url(../images/3.jpg);
+}
+.service-card4{
+    background-image: url(../images/5.jpg);
+}
+.service-card5{
+    background-image: url(../images/4.jpg);
+}
+.service-card6{
+    background-image: url(../images/6.jpg);
+}
+.service-card7{
+    background-image: url(../images/7.jpg);
+}
+.service-card8{
+    background-image: url(../images/8.jpg);
+}
+.service-card9{
+    background-image: url(../images/9.jpg);
+}
+.service-card10{
+    background-image: url(../images/10.jpg);
+}
+.souvenirs{
+    margin-top: 150px;
+}
+
+
+    .souvenirs_item{
+        padding: 20px;
+        background-color: #131313;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        border: none;
+        
+    }
+    .souvenirs_title {
+        font-size: 24px;
+        line-height: 19px;
+        margin-top: 30px;
+        color: #FF800B;
+        
+    }
+    
+    .souvenirs_title:hover{
+        text-decoration: none;
+    }
+    
+    .souvenirs_text {
+        margin-top: 25px;
+        font-size: 18px;
+       
+        
+    }
+
+        .souvenirs_about{
+            text-decoration: none;
+            color: #FF800B;
+            
+        }
+        .souvenirs_about:hover{
+            color: #FF800B;
+            border-bottom: 2px solid #FF800B;
+            
+        }
+    
+        .about_back{
+            background-image: url(../images/1614542556_14-p-fon-oranzhevo-belii-16.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-top: 30px;
+          
+        }
+           .about_text{
+               margin-top: 150px;
+               font-weight: bold;
+               margin-bottom: 50px;
+           }
+        
+           .about_item{
+               background: rgba(196, 196, 196, 0.3);
+               
+               
+           }
+           .about_wrap{
+               margin-top: 100px;
+           }
+          
+           .about-img{
+               width: 157px;
+               padding-top: 35px
+              
+           }
+           .card_about{
+               text-align: center;
+           }
+           .about_title{
+               font-size: 36px;
+               padding-top:30px;
+               padding-bottom: 30px;
+               font-weight: bold;
+           }
+           .about_undertittle{
+               font-size: 24px;
+           }
+        .news{
+            margin-top: 150px;
+        }
+        .hidden-text{
+           padding-top: 50px;
+           padding-bottom: 50px;
+        }
+        .news_item{
+            background-color: #131313;
+            margin-top: 30px;
+        }
+        .news-img{
+            width: 100%;
+            margin-top: -10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .news_tittle{
+            font-size: 20px;
+    
+            margin-bottom: 19px;
+        }
+        .news_text{
+            font-size: 14px;
+            color: #FF800B;
+        }
+        .reviews{
+            margin-top: 150px;
+        }
+        .reviews_item{
+            background-color: #131313;
+            margin-top: 30px;}
+        .reviews_tittle{
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .reviews_under{
+            text-align: center;
+            font-size: 14px;
+            color: #FF800B;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+        .reviews_all{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .read{
+            color: #FF800B;
+            text-decoration: none;
+            
+        }
+        .read:hover{
+            color: #FF800B;
+           text-decoration: underline;
+        }
+
+        #map {width:100%; height:600px;}
+        .footer_content{
+            background-color: #131313;
+            position: relative;
+            z-index: 1;
+           top:250px;
+           min-height: 540px;
+           border-radius: 5px;
+           box-shadow: 4px 4px 20px #000000;
+        }
+        .footer_tittle{
+            padding-left: 30px;
+            font-size: 28px;
+            color: #FF800B;
+            font-weight: bold;
+            padding-top: 30px;
+        }
+        .footer_list{
+            list-style-type: none;
+            color: #fff;
+        }
+        .footer_content li{
+           padding-top: 20px;
+        }
+        .footer_content a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer_content a:hover{
+            color:#FF800B
+        }
+        .footer_tittle_second{
+            font-size: 28px;
+            color: #FF800B;
+            font-weight: bold;
+            padding-top: 30px;
+            padding-bottom: 17px;
+            padding-left: 7px;
+        }
+        .footer_info{
+            padding-top: 3px;
+            padding-left: 7px;
+        }
+        .footer_text{
+            font-size: 14px;
+            padding-left: 35px;
+            margin-top: -17px;
+            cursor: pointer;
+            font-family: Verdana;
+        }
+        .footer_text:hover{
+            color: #FF800B
+            
+        }
+
+        .footer_info_second{
+            padding-top: 20px;
+        }
+        .footer_text_second{
+            font-size: 14px;
+            padding-left: 41px;
+            margin-top: -27px;
+            cursor: pointer;
+        }
+      .pay{
+          width: 300px;
+          padding-left: 7px;
+      }
+      .map_marker{
+          max-width: 150px;
+          position: relative;
+          top: 50px;
+          text-align: center;
+          
+      }
+       
+       
+       .photo_printing{
+           background-image: url(../images/hi-tech-fotoapparat-foto.png);
+           min-height: 850px;
+           background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+margin-top: 3px
+       }
+       .photo_text{
+        background: rgba(196, 196, 196, 0.3);
+        width: 100%;
+        
+        margin-top: 100px;
+       }
+       .photo_mark{
+           width: 25px;
+           height: 25px;
+       }
+       .photo_marktext{
+           font-size: 14px;
+           padding-left: 15px;
+           padding-top: 5px;
+       }
+       .photo_all{
+           padding-top: 20px;
+           padding-left: 50px;
+           padding-bottom: 30px;
+       }
+       .photo_tittle{
+           font-size: 48px;
+           font-weight: bold;
+       }
+       .photo_undertittle{
+           font-size: 20px;
+           font-weight: bold;
+           padding-top: 30px;
+           padding-bottom: 30px;
+       }
+       .photo_list{
+           padding-bottom: 15px;
+       }
+       .photo_under{
+           font-weight: bold;
+           font-size: 14px;
+           padding-left: 40px;
+           margin-top: -20px;
+           letter-spacing: 1px;
+       }
+       .shadowex{
+        box-shadow: 0px -16px 15px #000000
+        
+       }
+       .price{
+        margin-top: 100px;
+       }
+       .price_line{ 
+        border-top:4px solid #FF800B;
+        margin-top: 50px;
+        margin-bottom: 50px;
+       }
+       .price_tittle{
+        font-weight: bold;
+        font-size: 36px;
+        padding-bottom: 50px;
+       }
+       .price_color{
+           
+           color: #fff;
+            text-align: center;
+     }
+     tr, td, th {
+         border: 3px solid #131313;
+         
+     }
+     .price-weight{
+         font-size: 16px;
+     }
+     .order{
+        margin-top: 150px;}
+        .order_background{
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .order_name{
+           padding-top: 50px;
+        }
+        .order_button{
+            background-color: #fff;
+            display: flex;
+    justify-content: space-between;
+    align-items: center;
+            color: #6c757d;
+        }
+        .number{
+            background-color: #fff;
+            
+            color: black;
+            
+            height: 38px;
+            border-radius: 5px;
+
+        }
+        .order_number{
+            padding-right: 8px;
+        }
+        .order_text{
+            text-align: center;
+            padding-top: 8px;
+            padding-right: 10px;
+            padding-left: 10px;
+            color: #6c757d;
+        }
+        .order_comment{
+            padding-bottom: 40px;
+        }
+        .order_btn{
+            background-color: #FF800B;
+            color: #fff;
+            font-size: 24px;
+          padding: 10px;
+        }
+        .order_btn:hover{
+           opacity: 80%;
+            color: #fff;
+        }
+        .order_indient{
+           padding-bottom: 50px;
+        }
+        
+        .photo_souvenir{
+            background-image: url(../images/3119c5ee4a3fb45f4d2b79b20bbc.png);
+            min-height: 650px;
+            background-repeat: no-repeat;
+             background-position: center;
+             background-size: cover;
+             margin-top: 3px
+        }
+        .souvenir_tittle{
+            font-size: 48px;
+            font-weight: bold;
+            padding-bottom: 30px;
+        }
+        .caption_images{
+            border-radius: 250px;
+            border: 2px solid #FF800B;
+        }
+        .caption_undertittle{
+            font-size: 14px;
+            text-align: center;
+            line-height: 20px;
+        }
+       
+        
+        .caption_header{
+            font-size: 36px;
+            font-weight: bold;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .caption_tittle{
+            padding-top: 40px;
+            padding-bottom: 20px;
+            text-align: center;
+            
+            font-size: 20px;
+        }
+        .caption_tittle_second{
+            padding-top: 40px;
+            padding-bottom: 20px;
+            text-align: center;
+            padding-left: 10px;
+            font-size: 20px;
+        }
+        
+
+    .choice{
+        margin-top: 200px;
+    }
+    .choice_item{
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        border: none;
+        
+    }
+    
+    
+    .choice_title:hover{
+        text-decoration: none;
+    }
+    
+    .choice_text {
+        margin-top: 25px;
+        font-size: 14px;
+       color: black;
+        
+    }
+        .choice_title {
+            font-size: 24px;
+            margin-top: 30px;
+            color: #131313;
+            font-weight: bold;
+        }
+        .choice_price{
+            color: #FF800B;
+            font-weight: bold;
+        }
+       
+        .choice_about{
+            text-decoration: none;
+            color: #FF800B;
+            
+        }
+        .choice_about:hover{
+            color: #FF800B;
+            border-bottom: 2px solid #FF800B;
+            
+        }
+        .choice_middle{
+            text-align: center;
+        }
+        .choice_footer{
+            border-top: none;
+        }
+    .arrow_width{
+        width: 70px;
+    }
+    .caption_arrow{
+       padding-top: 70px;
+       padding-left: 7px;
+    }
+    .caption_text{
+        font-size: 14px;
+        text-align: center;
+        line-height: 20px;
+        padding-top: 30px;
+    }
+   .caption_second{
+       margin-top: 150px;
+   }

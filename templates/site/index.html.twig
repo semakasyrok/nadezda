@@ -1,0 +1,445 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SiteController!{% endblock %}
+
+{% block body %}
+    <main>
+        <section class="slider">
+            <div id="carouselExampleDark" class="carousel  slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class ="carousel-opacity">
+                            <img src="images/1.png" class="d-sm-block d-none img-fluid " alt="Баннер1">
+                            <img src="images/fotopechat-s-telefona-.jpg" class="dblock d-sm-none img-fluid " alt="Баннер1">
+                        </div>
+                        <div class="carousel-caption d-flex align-items-center">
+                            <div class="container text-start">
+                                <div class="carousel_block">
+
+                                    <div class="carousel_text_block">
+                                        <h5 class="carousel-heading ">Печать фотографий</h5>
+                                        <p class ="carousel-text">Качественная оперативная печать фотографий<br> с любых носителей. </p>
+                                    </div>
+
+                                    <a href="#ask_question">
+                                        <button type="button" class="btn btn_carousel btn_orange" >Подробнее</button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item " data-bs-interval="10000">
+                        <div class ="carousel-opacity">
+                            <img src="images/1.png" class="d-sm-block d-none img-fluid " alt="Баннер1">
+                            <img src="images/fotopechat-s-telefona-.jpg" class="dblock d-sm-none img-fluid " alt="Баннер1">
+                        </div>
+                        <div class="carousel-caption d-flex align-items-center">
+                            <div class="container text-start">
+                                <div class="carousel_block">
+
+                                    <div class="carousel_text_block">
+                                        <h5 class="carousel-heading ">Печать фотографий</h5>
+                                        <p class ="carousel-text">Качественная оперативная печать фотографий<br> с любых носителей. </p>
+                                    </div>
+
+                                    <a href="#ask_question">
+                                        <button type="button" class="btn btn_carousel btn_orange" >Подробнее</button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item " data-bs-interval="10000">
+                        <div class ="carousel-opacity">
+                            <img src="images/1.png" class="d-sm-block d-none img-fluid " alt="Баннер1">
+                            <img src="images/fotopechat-s-telefona-.jpg" class="dblock d-sm-none img-fluid " alt="Баннер1">
+                        </div>
+                        <div class="carousel-caption d-flex align-items-center">
+                            <div class="container text-start">
+                                <div class="carousel_block">
+
+                                    <div class="carousel_text_block">
+                                        <h5 class="carousel-heading ">Печать фотографий</h5>
+                                        <p class ="carousel-text">Качественная оперативная печать фотографий<br> с любых носителей. </p>
+                                    </div>
+
+                                    <a href="#ask_question">
+                                        <button type="button" class="btn btn_carousel btn_orange" >Подробнее</button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+        <section class ="container service">
+            <h1 class ="service_text">НАШИ УСЛУГИ</h1>
+            <div class="row ">
+                <div class ="col-lg-6">
+                    <a href="#" class="service_hover">
+                        <div class ="service-card w-100">
+                            <div class="card-body">
+                                <h2 class="service__title">Фото на документы</h2>
+                                <p class ="service_undertittle2">Срочное фото на любые<br> документы всего за 5-10 минут.</p>
+                                <a href="#" class="about">Подробнее...</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class ="col-lg-6">
+                    <a href="#" class="service_hover">
+                        <div class ="service-card service-card2 ">
+                            <div class="card-body">
+                                <h2 class="service__title">Печать фото</h2>
+                                <p class ="service_undertittle">Качественная оперативная <br>печать фотографий с любых <br>носителей.</p>
+                                <a href="#" class="about">Подробнее...</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row ">
+                <div class ="col-lg-6">
+                    <a href="#" class="service_hover">
+                        <div class ="service-card service-card3">
+                            <div class="card-body">
+                                <h2 class="service__title">Ксерокопии</h2>
+                                <p class ="service_undertittle">ЧБ и цветное копирование<br> любых документов форматом до <br>А4.</p>
+                                <a href="#" class="about">Подробнее...</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class ="col-lg-6">
+                    <a href="#" class="service_hover">
+                        <div class ="service-card service-card4">
+                            <div class="card-body">
+                                <h2 class="service__title">Печать документов</h2>
+                                <p class ="service_undertittle">Оперативная ЧБ и цветная<br>  печать документов форматом до <br>А4.</p>
+                                <a href="#" class="about">Подробнее...</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row ">
+                <div class ="col-lg-6">
+                    <a href="#" class="service_hover">
+                        <div class ="service-card service-card5">
+                            <div class="card-body">
+                                <h2 class="service__title">Сканирование</h2>
+                                <p class ="service_undertittle">Сканирование документов и<br> фотографий с разрешением до <br>12800 dpi.</p>
+                                <a href="#" class="about">Подробнее...</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class ="col-lg-6">
+                    <a href="#" class="service_hover">
+                        <div class ="service-card service-card6">
+                            <div class="card-body">
+                                <h2 class="service__title">Сканирование плёнки</h2>
+                                <p class ="service_undertittle">Оцифровка любой фотопленки и<br> слайдов на профессиональном<br> сканере Epson.</p>
+                                <a href="#" class="about">Подробнее...</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row ">
+                <div class ="col-lg-6">
+                    <a href="#" class="service_hover">
+                        <div class ="service-card service-card7">
+                            <div class="card-body">
+                                <h2 class="service__title">Ретушь фото</h2>
+                                <p class ="service_undertittle">Профессиональная<br> ретушь/художественная ретушь<br> фотографий.</p>
+                                <a href="#" class="about">Подробнее...</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class ="col-lg-6">
+                    <a href="#" class="service_hover">
+                        <div class ="service-card service-card8">
+                            <div class="card-body">
+                                <h2 class="service__title">Фото на памятник</h2>
+                                <p class ="service_undertittle">Овальные и прямоугольные<br> фототаблички на памятник с <br>гарантией 20 лет.</p>
+                                <a href="#" class="about">Подробнее...</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="row ">
+                <div class ="col-lg-6">
+                    <a href="#" class="service_hover">
+                        <div class ="service-card service-card9">
+                            <div class="card-body">
+                                <h2 class="service__title">Наклейки на авто</h2>
+                                <p class ="service_undertittle">Изготовление любых наклеек на<br> авто из высококачественной <br>виниловой плёнки.</p>
+                                <a href="#" class="about">Подробнее...</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class ="col-lg-6">
+                    <a href="#" class="service_hover">
+                        <div class ="service-card service-card10">
+                            <div class="card-body">
+                                <h2 class="service__title">Изготовление визиток</h2>
+                                <p class ="service_undertittle2">Качественная печать визиток<br> всего по 1 рублю за штуку</p>
+                                <a href="#" class="about">Подробнее...</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class ="container souvenirs">
+            <h2 class ="service_text">ФОТОСУВЕНИРЫ</h2>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 service__items">
+                <div class="col">
+                    <div class="card souvenirs_item h-100">
+                        <a href="#">
+                            <img src="images/s-9271.jpg" class="card-img-top" alt=""></a>
+                        <div class="card-body p-0">
+                            <h2 class="souvenirs_title">Объемные буквы</h2>
+                            <p class="souvenirs_text">Оперативная печать светостойких фотомагнитов самых разнообразных видов и форм в Новосибирске. </p>
+                        </div>
+                        <div class="card-footer p-0">
+                            <a href="#" class="souvenirs_about">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card souvenirs_item h-100">
+                        <a href="#">
+                            <img src="images/s-9271.jpg" class="card-img-top" alt=""></a>
+                        <div class="card-body p-0">
+                            <h2 class="souvenirs_title">Печати на кружках</h2>
+                            <p class="souvenirs_text">Самая качественная печать на кружках в Новосибирске. Напечатаем на кружках фото, картинки, надписи, логотипы.</p>
+                        </div>
+                        <div class="card-footer p-0">
+                            <a href="#" class="souvenirs_about">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card souvenirs_item h-100">
+                        <a href="#">
+                            <img src="images/s-9271.jpg" class="card-img-top" alt=""></a>
+                        <div class="card-body p-0">
+                            <h2 class="souvenirs_title">Коврики для мышки</h2>
+                            <p class="souvenirs_text">Качественная печать Ваших фотографий картинок, текста, логотипов  на ковриках для компьютерной мыши.</p>
+                        </div>
+                        <div class="card-footer p-0">
+                            <a href="#" class="souvenirs_about">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card souvenirs_item h-100">
+                        <a href="#">
+                            <img src="images/s-9271.jpg" class="card-img-top" alt=""></a>
+                        <div class="card-body p-0">
+                            <h2 class="souvenirs_title">Фотокамни</h2>
+                            <p class="souvenirs_text">Печать любых Ваших фотографий на фотокамнях самых разных форм и размеров. </p>
+                        </div>
+                        <div class="card-footer p-0">
+                            <a href="#" class="souvenirs_about">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card souvenirs_item h-100">
+                        <a href="#">
+                            <img src="images/s-9271.jpg" class="card-img-top" alt=""></a>
+                        <div class="card-body p-0">
+                            <h2 class="souvenirs_title">Водные сувениры</h2>
+                            <p class="souvenirs_text">Водные фоторамки, водные шкатулки, водные снежные шары с Вашими фотографиями</p>
+                        </div>
+                        <div class="card-footer p-0">
+                            <a href="#" class="souvenirs_about">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card souvenirs_item h-100">
+                        <a href="#">
+                            <img src="images/s-9271.jpg" class="card-img-top" alt=""></a>
+                        <div class="card-body p-0">
+                            <h2 class="souvenirs_title">Брелки</h2>
+                            <p class="souvenirs_text">Изготовление брелков с Вашими фото, логотипами, текстом, брелоков с госномером авто</p>
+                        </div>
+                        <div class="card-footer p-0">
+                            <a href="#" class="souvenirs_about">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class ="about_text">ПОЧЕМУ МЫ</h2>
+        </section>
+        <section class ="container-fluid about_back h-100">
+            <div class ="hidden-text">
+                <div class ="container about_us">
+                    <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4 ">
+                        <div class ="col ">
+                            <div class ="card about_item align-items-center">
+                                <img src="images/year.png" class ="about-img" alt="">
+                                <div class="card_about">
+                                    <h2 class="about_title">Опыт</h2>
+                                    <p class="about_undertittle">20-ти летний опыт в области<br> фотографии, ретуши и печати<br> фото </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class ="col ">
+                            <div class ="card about_item align-items-center">
+                                <img src="images/equipment.png" class ="about-img" alt="">
+                                <div class="card_about">
+                                    <h2 class="about_title">Оборудование</h2>
+                                    <p class="about_undertittle">Профессиональное оборудование от<br> именитых производителей: Canon,<br> Epson, HP, Roland</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class ="col ">
+                            <div class ="card about_item align-items-center">
+                                <img src="images/Materials.png" class ="about-img" alt="">
+                                <div class="card_about">
+                                    <h2 class="about_title">Материалы</h2>
+                                    <p class="about_undertittle">Лучшие, высокого качества,<br> проверенные на практике,<br> расходные материалы</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class ="col">
+                            <div class ="card about_item align-items-center">
+                                <img src="images/Prices.png" class ="about-img" alt="">
+                                <div class="card_about">
+                                    <h2 class="about_title">Цены</h2>
+                                    <p class="about_undertittle">Адекватные цены на все услуги. <br>На многие - самые низкие в <br>Новосибирске</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class ="col">
+                            <div class ="card about_item align-items-center">
+                                <img src="images/Reviews.png" class ="about-img" alt="">
+                                <div class="card_about">
+                                    <h2 class="about_title">Отзывы</h2>
+                                    <p class="about_undertittle">Рельные отзывы о нас и<br> рекомендации наших <br>клиентов </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class ="col">
+                            <div class ="card about_item align-items-center">
+                                <img src="images/Payment.png" class ="about-img" alt="">
+                                <div class="card_about">
+                                    <h2 class="about_title">Оплата</h2>
+                                    <p class="about_undertittle">Все самые удобные способы<br> оплаты на сайте и в<br> фотосалоне </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+        <section class ="container news">
+            <h2 class ="service_text">НОВОСТИ</h2>
+            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 g-4 ">
+                <div class ="col ">
+                    <div class ="card news_item h-100">
+                        <div class ="card-body">
+                            <h4 class ="news_tittle">Дарим фотографий 8х10 см к заказам от 899 рублей по 28.05.2021</h4>
+                            <p class = "news_text">14 мая, 2021, 16:53</p>
+                            <img src="images/present.jpg" class ="news-img">
+                            <p class ="news_footer">Воспользуйтесь шансом запечатлеть ещё больше важных моментов.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class ="col ">
+                    <div class ="card news_item h-100">
+                        <div class ="card-body">
+                            <h4 class ="news_tittle">Розыгрыш трёх водных сувениров на выбор по 31.05.21</h4>
+                            <p class = "news_text">10 мая, 2021, 15:21</p>
+                            <img src="images/raffle.jpg" class ="news-img">
+                            <p class ="news_footer">А вы хотите получить водный сувенир совершенно бесплатно?</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class ="col ">
+                    <div class ="card news_item h-100">
+                        <div class ="card-body">
+                            <h4 class ="news_tittle">В нашем магазине цены становятся ещё ниже от 01.05.21</h4>
+                            <p class = "news_text">01 мая, 2021, 15:38</p>
+                            <img src="images/krujka.png" class ="news-img">
+                            <p class ="news_footer">с 01.05.2021 мы вводим постоянную систему скидок при заказе одинаковой сувенирной продукции тиражом от 5 шт.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class ="container reviews">
+            <h2 class ="service_text">ОТЗЫВЫ</h2>
+            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 g-4 ">
+                <div class ="col ">
+                    <div class ="card reviews_item h-100">
+                        <div class ="card-body">
+                            <h4 class ="reviews_tittle">Даниил Макаров</h4>
+                            <p class = "reviews_under">14 мая, 2021, 16:53</p>
+                            <p class ="reviews_footer">Отличная типография! Очень вежливый администратор! Всё сделали оперативно и в срок! Качеством доволен! Буду обращаться ещё!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class ="col ">
+                    <div class ="card reviews_item h-100">
+                        <div class ="card-body">
+                            <h4 class ="reviews_tittle">Елена</h4>
+                            <p class = "reviews_under">14 мая, 2021, 16:53</p>
+                            <p class ="reviews_footer">Очень красивое фото сделали на заграпаспорт, спасибо! До этого не могла найти достойный фотосалон, теперь буду знать)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class ="col ">
+                    <div class ="card reviews_item h-100">
+                        <div class ="card-body">
+                            <h4 class ="reviews_tittle">Софья Коростелева</h4>
+                            <p class = "reviews_under">14 мая, 2021, 16:53</p>
+                            <p class ="reviews_footer">Быстро, удобно, доброжелательно! То, что нужно, когда срочно понадобились полиграфические услуги 😍 Прям советую!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class ="reviews_all d-flex justify-content-end">
+                <a href="#" class ="read">Читать все отзывы</a>
+            </div>
+        </section>
+    </main>
+{% endblock %}
