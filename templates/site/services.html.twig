@@ -175,79 +175,56 @@
     </section>
     <section class ="container order">
         <h2 class ="price_tittle">ЗАКАЗАТЬ ПЕЧАТЬ ФОТО</h2>
+        {{ form_start(form) }}
         <div class ="order_background">
-            <form class="order_name">
+            {{ form_errors(form) }}
+            <div class="order_name">
                 <div class="row ">
                     <div class ="col-lg-2"></div>
                     <div class="col-lg-3">
-                        <input type="text" class="form-control" placeholder="Ссылка на облако">
+                        {{ form_row(form.link) }}
                     </div>
                     <div class ="col-lg-2"></div>
                     <div class="col-lg-3">
-                        <input type="text" class="form-control" placeholder="Как вас зовут?">
+                        {{ form_row(form.name) }}
                     </div>
                 </div>
-            </form>
-            <form class="order_name">
+            </div>
+            <div class="order_name">
                 <div class="row ">
                     <div class ="col-lg-2"></div>
-                    <div class="col-lg-3 dropdown">
-                        <a class="btn dropdown-toggle order_button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-                            Размер
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                    <div class="col-lg-3">
+                        {{ form_row(form.size) }}
                     </div>
                     <div class ="col-lg-2"></div>
                     <div class="col-lg-3 d-flex ">
-                        <div class ="order_number">
-                            <div class ="number">
-                                <p class ="order_text">+7</p>
-                            </div>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Как вас зовут?">
+                        {{ form_row(form.phone) }}
                     </div>
                 </div>
-            </form>
-            <form class="order_name">
+            </div>
+            <div class="order_name">
                 <div class="row ">
                     <div class ="col-lg-2"></div>
                     <div class="col-lg-3 dropdown">
-                        <a class="btn dropdown-toggle order_button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-                            Бумага
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        {{ form_row(form.paper) }}
                     </div>
                     <div class ="col-lg-2"></div>
                     <div class="col-lg-3">
-                        <input type="text" class="form-control" placeholder="E-mail для связи">
+                        {{ form_row(form.email) }}
                     </div>
                 </div>
-            </form>
-            <form class="order_name">
-                <div class="row ">
-                    <div class ="col-lg-2"></div>
-                    <div class="col-lg-8">
-                        <input type="text" class="form-control order_comment" placeholder="Ссылка на облако">
-                    </div>
-                </div>
-            </form>
-            <form class="order_name">
+            </div>
+
+            <div class="order_name">
                 <div class="row ">
                     <div class ="col-lg-4"></div>
                     <div class="col-lg-4 order_indient">
-                        <button type="button" class="btn w-100 order_btn">Заказать печать фото</button>
+                        {{ form_row(form.submit) }}
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
+        {{ form_end(form) }}
     </section>
     <section class ="container souvenirs">
         <h2 class ="service_text">А ЕЩЁ МЫ ДЕЛАЕМ ФОТОСУВЕНИРЫ</h2>

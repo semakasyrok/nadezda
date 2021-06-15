@@ -3,7 +3,9 @@
 namespace App\Controller;
 
 use App\Entity\Feedback;
+use App\Entity\Order;
 use App\Form\FeedbackFormType;
+use App\Form\OrderFormType;
 use App\Repository\FeedbackRepository;
 use App\Repository\ServicesRepository;
 use Doctrine\ORM\EntityManagerInterface;
@@ -31,10 +33,25 @@ class SiteController extends AbstractController
     }
 
     #[Route('/services', name: 'services')]
-    public function services(ServicesRepository $servicesRepository): Response
-    {
+    public function services(
+        ServicesRepository $servicesRepository,
+        EntityManagerInterface $entityManager,
+        Request $request
+    ): Response {
+        $order = new Order();
+        $orderForm = $this->createForm(OrderFormType::class, $order);
+        $orderForm->handleRequest($request);
+
+        if ($orderForm->isSubmitted() && $orderForm->isValid()) {
+            $entityManager->persist($order);
+            $entityManager->flush();
+
+            $this->addFlash('success_submit', true);
+        }
+
         return $this->render('site/services.html.twig', [
             'services' => $servicesRepository->findAll(),
+            'form' => $orderForm->createView(),
         ]);
     }
 
